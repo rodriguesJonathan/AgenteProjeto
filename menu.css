@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+
+
+.account-wall
+{
+    margin-top: 230px;
+}
+.login-title
+{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    display: block;
+}
+
+
+.hero-image {
+    background-image: url("menufundo.png");
+    
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+.icon-stuff{
+   color: #74F1F4;
+}
+
+.icon-menu{
+    color: #0A98AB;
+ }
+ .bg-nav-color{
+    background-color: #0A98AB;
+    color:white;
+ }
+
+.txt-color{
+    color: white;
+   
+}
+
+.txt-menu-color{
+    color: #74F1F4;
+   
+}
+
+.nav-bar-color
+{
+    background-color: #0A98AB;
+}
+
+.menu-topo{
+    width: 43%;
+    padding-left: 92%;
+    padding-top: 6%;
+    
+}
