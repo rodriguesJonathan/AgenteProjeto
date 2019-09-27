@@ -1,0 +1,10 @@
+create database  IF NOT EXISTS db_blog charset 'utf8';
+use db_blog;
+CREATE TABLE IF NOT EXISTS usuario(
+	nomUsuario varchar(40),
+    codEmail varchar(40),
+    codsenha varchar(40),
+    numSus varchar(15),
+    codCEP int(8),
+    numLogradouro varchar(7),
+    dscLogradouro varchar(40))
