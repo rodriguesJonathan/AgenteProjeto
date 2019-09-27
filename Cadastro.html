@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>Contato</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    </head>
+<body>
+    <div class="container">
+       <br>
+       <div class='row'>
+          <div class="col-sm-offset-2 col-md-8">
+             <form class="form-horizontal" method="post" action="" id="formulario">
+                 <div id="msg" class=""></div>
+                <div class="form-group">
+                   <div class="col-sm-10">
+                       <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo" required>
+                   </div>
+                </div>
+                <div class="form-group">
+                   <div class="col-sm-10">
+                       <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                   </div>
+                </div>
+                <div class="form-group">
+                   <div class="col-sm-10">
+                       <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
+                   </div>
+                </div>
+                <div class="form-group">
+                   <div class="col-sm-10">
+                       <input type="password" class="form-control" id="repetirSenha" name="repetirSenha" placeholder="Repetir Senha" required>
+                   </div>
+                </div>
+                <div class="form-group">
+                   <div class="col-sm-10">
+                       <input class="form-control" id='sus' name="sus"  placeholder="Nº SUS" required></input>
+                   </div>
+                </div>
+                <div class="form-group">
+                   <div class="col-sm-10">
+                       <input class="form-control" id='cep' name="cep"  placeholder="CEP" required></input>
+                   </div>
+                </div>
+                <div class="form-group">
+                   <div class="col-sm-10">
+                       <input class="form-control" id='numero' name="numero"  placeholder="Número" required></input>
+                   </div>
+                </div>
+                <div class="form-group">
+                   <div class="col-sm-10">
+                       <input class="form-control" id='endereco' name="endereco"  placeholder="Endereço" required></input>
+                   </div>
+                </div>
+
+                <div class="form-group">
+                   <div class="col-sm-offset-2 col-sm-10">
+                       <input type="submit" class="btn btn-primary btn-block" name="enviar" value="Cadastrar">
+                   </div>
+                </div>
+             </form>
+          </div>
+       </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#formulario').submit(function() {
+                var dados = $('#formulario').serialize();
+                
+                $.ajax({
+                    type : 'POST',
+                    url  : 'cadastra.php',
+                    data : dados
+                })
+                .done(function(msg){
+				         $("#resultado").html(msg);
+				         $("#nome").val('');
+				         $("#assunto").val('');
+				         $("#email").val('');
+				         $("#mensagem").val('');
+				     })
+				.fail(function(jqXHR, textStatus, msg){
+				          alert("Erro: " +msg);
+                });
+
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -21,6 +21,7 @@ body {
     height: 60px!important;
     overflow: hidden;
     z-index: 0;
+    
 }
 .main {
     margin: 0 auto;
