@@ -155,7 +155,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 
 .icon-color{
-    color:black;
+    color:rgb(216, 214, 214);
 }
 
 .icon-padding-left{
@@ -297,9 +297,7 @@ a.btn-card {
     color: #fff;
 }
 
-.h6{
-    color:rgb(150, 147, 147);
-}
+
 
 .modal-styel{
     border-radius: .125rem;
@@ -361,4 +359,8 @@ a.btn-card {
 
     background-color: #48D1CC;
     color: white;
+}
+
+h3{
+    color: rgb(216, 214, 214);
 }
