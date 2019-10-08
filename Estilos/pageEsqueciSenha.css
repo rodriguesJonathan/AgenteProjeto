@@ -1,46 +1,35 @@
-body,
-html {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	background: #60a3bc !important;
+.form_containerESQUECI {
+    margin-top: 380px;
 }
-
-.form_container {
-	margin-top: 380px;
-}
-.login_btn {
-	width: 100%;
-	background: #2CD7D1 !important;
+.login_btnESQUECI {
+    width: 100%;
+    background: #2CD7D1 !important;
     color: white !important;
     margin-top: -50px;
     
 }
-.login_btn:focus {
-	box-shadow: none !important;
-	outline: 0px !important;
+.login_btnESQUECI:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
 }
-.login_container {
-	padding: 0 2rem;
+.login_containerESQUECI {
+    padding: 0 2rem;
 }
-.input-group-text {
-	background: #2CD7D1 !important;
-	color: white !important;
-	border: 0 !important;
-	border-radius: 0.25rem 0 0 0.25rem !important;
+.input-group-textESQUECI {
+    background: #2CD7D1 !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
 }
-.input_user,
-.input_pass:focus {
-	box-shadow: none !important;
-	outline: 0px !important;
-}
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-	background-color: #c0392b !important;
+.input_userESQUECI,
+.input_passESQUECI:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
 }
 
-.bg-img {
+.bg-imgESQUECI {
     background-image: url("../Imagens/bg.png"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
+    background-color: #037e8e; /* Used if the image is unavailable */
     height: 100%; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */

@@ -1,0 +1,228 @@
+/*---------------------------------------------------------------------------------------------------------------------------------------------
+                                                    JÁ VEIO COM ARQUIVO SINGLEPAGE
+
+Sumario:
+* INDEX
+* 
+---------------------------------------------------------------------------------------------------------------------------------------------*/
+header{
+    width:20%;
+    background:#fff;
+    position: absolute;
+    left:0;
+    top:5%;
+    z-index: 5;
+}
+header h1{
+    text-align: center;
+}
+nav ul{
+    list-style:none;
+    margin:5px 0;
+    padding:0;
+}
+nav a{
+    display:block;
+    border:1px solid #e5e5e5;
+    border-left:0;
+    border-right:0;
+    margin:3px 0;
+    color:#333;
+    padding:5px 0;
+    text-decoration: none;
+} 
+.box{
+    position:absolute;
+    top:5%;
+    right:10px;
+    width:100%;
+    height:100%;
+    background:#fff;
+}
+.box h2{
+    font-size:20px;
+    padding:10px;
+}
+.box p{
+    font-size:12px;
+    padding:10px;
+}
+.content{
+    min-width: 100%;
+    height: 98%;
+    position: absolute;
+    margin-left:-101%;
+    -webkit-transition: margin-left .8s ease-in-out;
+    -moz-transition: margin-left .8s ease-in-out;
+    -o-transition: margin-left .8s ease-in-out;
+    transition: margin-left .8s ease-in-out;
+}
+.content:target{
+    margin-left:0;
+}
+
+#home:target ~ header #link-home a,
+#company:target ~ header #link-company a,
+#service:target ~ header #link-service a,
+#contact:target ~ header #link-contact a{
+    background: #333;
+    color: #fff;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------
+                                                                INDEX
+---------------------------------------------------------------------------------------------------------------------------------------------*/
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #037e8e !important;
+}
+
+.form_containerINDEX {
+    margin-top: 380px;
+}
+.login_btnINDEX {
+    width: 100%;
+    background: #2CD7D1 !important;
+    color: white !important;
+    margin-top: -50px;
+    
+}
+.login_btnINDEX:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.login_containerINDEX {
+    padding: 0 2rem;
+}
+.input-group-textINDEX {
+    background: #2CD7D1 !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_userINDEX,
+.input_passINDEX:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.bg-imgINDEX {
+    background-image: url("../Imagens/bg.png"); /* The image used */
+    background-color: #037e8e; /* Used if the image is unavailable */
+    height: 100%; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------
+                                                                ESQUECI
+---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.form_containerESQUECI {
+    margin-top: 380px;
+}
+.login_btnESQUECI {
+    width: 100%;
+    background: #2CD7D1 !important;
+    color: white !important;
+    margin-top: -50px;
+    
+}
+.login_btnESQUECI:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.login_containerESQUECI {
+    padding: 0 2rem;
+}
+.input-group-textESQUECI {
+    background: #2CD7D1 !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_userESQUECI,
+.input_passESQUECI:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.bg-imgESQUECI {
+    background-image: url("../Imagens/bg.png"); /* The image used */
+    background-color: #037e8e; /* Used if the image is unavailable */
+    height: 100%; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------
+                                                                MENU
+---------------------------------------------------------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+
+.background-imageMENU {
+    background-image: url("../Imagens/fundoMenu.png");
+    
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+.icon-MENU{
+    color: #0A98AB;
+ }
+
+.bg-nav-colorMENU{
+    background-color: #0A98AB;
+    color:white;
+}
+
+.txt-colorMENU{
+    color: white;
+   
+}
+
+.link-colorMENU{
+    color: #74F1F4;
+   
+}
+
+.nav-bar-colorMENU
+{
+    background-color: #0A98AB;
+}
+
+.topoMENU{
+    width: 43%;
+    padding-left: 92%;
+    padding-top: 6%;
+    
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+ }
