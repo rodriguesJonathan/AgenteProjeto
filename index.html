@@ -44,7 +44,7 @@ Cada section é uma tela a ser exibida.
 	<!---------------------------------------------------------------------------------------------------------------------------------------------
                                                                 INDEX
 	----------------------------------------------------------------------------------------------------------------------------------------------->
-	<section id="home" class="content" style="background-color: #037e8e;">
+	<section id="home" class="content" style="background-color: #037e8e; display: block;">
 		
 		<div class="container h-100 bg-imgINDEX">
 			<div class="d-flex justify-content-center h-100">
@@ -66,19 +66,18 @@ Cada section é uma tela a ser exibida.
 							<div class="form-group">
 								<div class="custom-control custom-checkbox">
 									<input type="checkbox" class="custom-control-input" id="customControlInline">
-									
 								</div>
 							</div>
 						</form>
 					</div>
-						<div class="d-flex justify-content-center mt-3 login_containerINDEX">
-							<button type="button" name="button" class="btn login_btnINDEX">Login</button>
+					<div class="d-flex justify-content-center mt-3 login_containerINDEX">
+						<a type="button" name="button" class="btn login_btnINDEX" href="#pageMenu" onclick="mostre_navMenu()"  >Login</a>
+					</div>
+					<div class="mt-4">
+						<div class="d-flex justify-content-center links">
+							<a href="#pageEsqueciSenha" style="color:white">Esqueci a senha</a>
 						</div>
-						<div class="mt-4">
-							<div class="d-flex justify-content-center links">
-								<a href="#pageEsqueciSenha" style="color:white">Esqueci a senha</a>
-							</div>
-						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -156,23 +155,180 @@ Cada section é uma tela a ser exibida.
 		            <div class="dropdown-divider "></div>
 		            <a class="dropdown-item txt-colorMENU" href="#">Vizualizar acomp. do plano</a>
 		            <div class="dropdown-divider"></div>
-		            <a class="dropdown-item txt-colorMENU" href="#">Sair</a>
+		            <a class="dropdown-item txt-colorMENU" href="#home" onclick="apaga_navMenu()">Sair</a>
 		        </div>
 	        </div>
-	        
-	    
-		    <nav class="navbar  navbar-expand-sm nav-bar-colorMENU text-center justify-content-center" style="height: 100px; font-size: 13px; ">
+			
+		<div id="nav" style="display: none">
+			<nav class="navbar  navbar-expand-sm nav-bar-colorMENU  fixed-bottom text-center justify-content-center" style="height: 100px; font-size: 13px; ">
 		            
-		        <a class="nav-item nav-link active txt-colorMENU" href="#"><i class="fas fa-map-marker  fa-3x"></i><p class="link-colorMENU">Mapa</p></a>
-		     	<a class="nav-item nav-link txt-colorMENU" href="#pageCadastro1Moradia"><i class="fas fa-home  fa-3x"></i><p class="link-colorMENU">Visitas</p></a>
-		        <a class="nav-item nav-link txt-colorMENU" href="#pageNotificacoes"><i class="fas fa-volume-up  fa-3x"><span class="badge badge-danger">7</span></i><p class="link-colorMENU">Notificações</p></a>
-		        <a class="nav-item nav-link txt-colorMENU" href="#"><i class="fas fa-th-large  fa-3x"></i></i><p class="link-colorMENU">Painel</p></a>
+		        <a class="nav-item nav-link active txt-colorMENU" href="#" onclick="apaga_navMenu()"><i class="fas fa-map-marker  fa-3x"></i><p class="link-colorMENU">Mapa</p></a>
+		     	<a class="nav-item nav-link txt-colorMENU" href="#pageCadastro1Moradia" onclick="apaga_navMenu()"><i class="fas fa-home  fa-3x"></i><p class="link-colorMENU">Visitas</p></a>
+		        <a class="nav-item nav-link txt-colorMENU" href="#pageNotificacoes" onclick="apaga_navMenu()"><i class="fas fa-volume-up  fa-3x"><span class="badge badge-danger">7</span></i><p class="link-colorMENU">Notificações</p></a>
+		        <a class="nav-item nav-link txt-colorMENU" href="#" onclick="apaga_navMenu()"><i class="fas fa-th-large  fa-3x"></i><p class="link-colorMENU">Painel</p></a>
 		        
 		    </nav>
 		</div>
+		    
+		</div>
 	</section>
+	<!---------------------------------------------------------------------------------------------------------------------------------------------
+                                                               Notificações
+	----------------------------------------------------------------------------------------------------------------------------------------------->
 
 
+	<section id="pageNotificacoes" class="content">
+		<div id="mySidepanel" class="sidepanel">
+			<a href="javascript:void(0)" style="color:#0AB6DB;" class="closebtn" onclick="fecharNavNotificacao()">&times;</a>		
+		</div>
+		<div class=" header" style="height: 10%; background-color:#0AB6DB;" >
+			<button class="openbtn btn-lg  " onclick="abrirNavNotificacao()" style=" background-color:#0AB6DB; font-size: 30px"><i class=" icon-padding-1 fa fa-bars  "></i>Notificações</button>
+		</div>
+		<br>
+		<div class="container " style="margin-top: -10%">
+			<a style=" background-color:#48D1CC;"  href="nova-notificacao.html" class="btn-position btn-lg btn-primary btn-block btn-style text-center " ><i class=" fas fa-plus"></i>&nbsp; Nova notificação</a>
+		</div>
+		
+		
+			<br>
+		
+			<div class="container h6 text-center">
+			<p>Vizualização de alertas da população<hr></p>
+			</div>
+		
+		
+		
+			<div class="details-card ">
+				<div class="">
+					<div class="row">
+						<div class="container">
+							<div class="card-content ">
+								<div class="card-img">
+								</div>
+								<div class="card-desc">
+									<h6  class=" text-right icon-color">Vizualizar dados do usuário<i class=" icon-color icon-padding-left fas fa-chevron-right  icon-padding"></i></h6>
+									<br>
+									<h3 style="color:rgb(216, 214, 214)"><i  class="icon-color fas fa-user fa-2x icon-padding-2"></i>Usuário</h3>
+									<form class="">
+										<div class="mb-3">
+											<textarea class="form-control " id="" placeholder="Mensagem" style="background-color:rgb(216, 214, 214); height: 120px " required></textarea>
+											
+										</div>
+									</form>
+									<div class="container text-center">
+											<button type="button" class=" btn btn-danger" >Não validar</button>
+											<button type="button" class=" btn botao" style="width: 120px" data-toggle="modal" data-target="#exampleModal">Validar</button>
+											</button>
+											
+											<!-- Modal -->
+											<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+												<div class="modal-dialog-centered modal-dialog" role="document">
+												<div class="modal-content">
+													
+													<div class="modal-body ">
+													
+														<form>
+				
+															<div class="form-group">
+																<label for=""></label>
+																<select class="form-control "  style="background-color:rgb(216, 214, 214);">
+																<option>Grupo</option>
+																<option>-</option>
+																<option>-</option>
+																<option>-</option>
+																</div>
+																</select>
+																</form>
+																</div>
+																
+			
+			
+			
+													</div>
+													<div class="modal-footer">
+													
+													<button type="button" class="btn btn-primary btn-block btn-style">Notificar</button>
+													</div>
+												</div>
+												</div>
+											</div>
+								
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+
+
+
+
+				<div class="details-card ">
+					<div class="">
+						<div class="row">
+							<div class="container">
+								<div class="card-content ">
+									<div class="card-img">
+									</div>
+									<div class="card-desc">
+										<h6 class=" text-right icon-color">Vizualizar dados do usuário<i class=" icon-color icon-padding-left fas fa-chevron-right  fa-sm icon-padding"></i></h6>
+										<br>
+										<h3 style="color:rgb(216, 214, 214)"><i class="icon-color fas fa-user fa-2x icon-padding-2"></i>Usuário</h3>
+										<form class="">
+											<div class="mb-3">
+												<textarea class="form-control " id="" placeholder="Mensagem" style="background-color:rgb(216, 214, 214); height: 100px " required></textarea>
+												
+											</div>
+										</form>
+										<div class="container text-center">
+											
+											
+												<button type="button" class="btn btn-danger " >Não validar</button>
+												<button type="button" class="btn botao" style="width: 120px" data-toggle="modal" data-target="#exampleModal">Validar</button>
+												</button>
+												
+												<!-- Modal -->
+												<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+													<div class="modal-dialog-centered modal-dialog" role="document">
+													<div class="modal-content">
+														
+														<div class="modal-body ">
+														
+															<form>
+					
+																<div class="form-group">
+																	<label for=""></label>
+																	<select class="form-control "  style="background-color:rgb(216, 214, 214);">
+																	<option>Grupo</option>
+																	<option>dale</option>
+																	<option>dele</option>
+																	<option>doli</option>
+																	</div>
+																	</select>
+																	</form>
+																	</div>
+																	
+				
+				
+				
+													</div>
+													<div class="modal-footer">					
+														<button type="button" class="btn btn-primary btn-block btn-style">Notificar</button>
+													</div>
+												</div>
+											</div>
+										</div>			
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+						<br>
+		
+	</section>
 
 
 
@@ -191,5 +347,32 @@ Cada section é uma tela a ser exibida.
 		</article>
 	</section>
 	
+
+	<script>
+		function mostre_navMenu(){
+			
+			$("#nav").css('display','block');
+
+		}
+		function apaga_navMenu(){
+			
+			$("#nav").css('display','none');
+
+		}
+
+		/* Set the width of the sidebar to 250px (show it) */
+		function abrirNavNotificacao() {
+		document.getElementById("mySidepanel").style.width = "250px";
+		}
+
+		/* Set the width of the sidebar to 0 (hide it) */
+		function fecharNavNotificacao() {
+		document.getElementById("mySidepanel").style.width = "0";
+		}
+
+	
+	</script>
+	
+
 </body>
 </html>
