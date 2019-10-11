@@ -21,18 +21,18 @@
 		<div class="d-flex justify-content-center h-100">
 			<div class="container " style="padding: top 50px;">
 				<div class="d-flex justify-content-center form_container">
-					<form>
+					<form class="form-horizontal" method="post" action="" id="formulario">
 						<div class="input-group mb-3">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" name="" class="form-control input_user" value="" placeholder="Email">
+							<input type="text" name="email" class="form-control input_user" value="" placeholder="Email">
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-lock"></i></span>
 							</div>
-							<input type="password" name="" class="form-control input_pass" value="" placeholder="Senha">
+							<input type="password" name="senha" class="form-control input_pass" value="" placeholder="Senha">
 						</div>
 						<div class="form-group">
 							<div class="custom-control custom-checkbox">
@@ -40,11 +40,15 @@
 								
 							</div>
 						</div>
+
+						<div class="d-flex justify-content-center mt-3 login_container">
+							<button type="submit" name="button" class="btn login_btn">Login</button>
+						</div>
+
+
 					</form>
 				</div>
-				<div class="d-flex justify-content-center mt-3 login_container">
-					<button type="button" name="button" class="btn login_btn">Login</button>
-				</div>
+				
 				<div class="mt-4">
 					
 					<div class="d-flex justify-content-center links">
@@ -54,5 +58,30 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#formulario').submit(function() {
+                var dados = $('#formulario').serialize();
+                
+                $.ajax({
+                    type : 'POST',
+                    url  : '../Banco/login.php',
+                    data : dados
+					
+                })
+                .done(function(msg){
+				         alert("Sucesso"+msg);
+				     })
+				.fail(function(jqXHR, textStatus, msg){
+				          alert("Erro: " +msg);
+                });
+
+                return false;
+            });
+        });
+    </script>
 </body>
 </html>

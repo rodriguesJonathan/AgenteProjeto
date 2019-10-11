@@ -71,15 +71,11 @@
                 
                 $.ajax({
                     type : 'POST',
-                    url  : 'https://justificative-autom.000webhostapp.com/mediadorPageCad_DB.php',
+                    url  : '../Banco/mediadorPageCad_DB.php',
                     data : dados
                 })
                 .done(function(msg){
-				         $("#resultado").html(msg);
-				         $("#nome").val('');
-				         $("#assunto").val('');
-				         $("#email").val('');
-				         $("#mensagem").val('');
+				         alert("Sucesso"+msg);
 				     })
 				.fail(function(jqXHR, textStatus, msg){
 				          alert("Erro: " +msg);
