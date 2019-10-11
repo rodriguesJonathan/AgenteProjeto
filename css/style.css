@@ -83,7 +83,6 @@ html {
     background: #037e8e !important;
 }
 
-
 .form_containerINDEX {
     margin-top: 380px;
 }
@@ -281,13 +280,13 @@ html {
     
     
 }
-.btn-style{
+.btn-styleNOVANOTNOTIFICACAO{
     background: #48D1CC;
     border: #48D1CC;
     height:45px;
    
 }
-.btn-styleNOTIFICACAO:hover{
+.btn-styleNOVANOTNOTIFICACAO:hover{
     background-color:rgb(14, 161, 156);    
 }
 
@@ -384,7 +383,7 @@ html {
   color: #f1f1f1;
 }
 
-.sidepanelNOTIFICACAO .closebtn {
+.sidepanelNOTIFICACAO .closebtnNOTIFICACAO {
   position: absolute;
   top: 0;
   right: 25px;
@@ -401,13 +400,101 @@ html {
   border: none;
 }
 
-.openbtn: hover {
+.openbtnNOTIFICACAO: hover {
   background-color: white;
 }
 
 
+/*---------------------------------------------------------------------------------------------------------------------------------------------
+                                                                NOVA NOTIFICAÇÃO
+---------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
-h3{
-    color: rgb(216, 214, 214);
+.bodyNOVANOT {
+    background-color: rgb(216, 215, 215);
+    background: white;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.headerNOVANOT {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color:  #0AB6DB;
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 0;
+    
+}
+
+.icon-padding-1NOVANOT{
+    padding-right: 10px;
+    
+}
+
+.btn-positionNOVANOT{
+    margin-top: 90px;
+    
+    
+}
+.btn-styleNOVANOT{
+    background: #48D1CC;
+    border: #48D1CC;
+    height:45px;
+    color:white;
+   
+}
+.btn-styleNOVANOT:hover{
+    background-color:rgb(14, 161, 156);    
+}
+
+
+.sidepanelNOVANOT {
+  height: 2000px;
+  width: 0; 
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:black; 
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s;
+}
+
+.sidepanelNOVANOT a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanelNOVANOT a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanelNOVANOT .closebtnNOVANOT {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+.openbtnNOVANOT {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtnNOVANOT: hover {
+  background-color: white;
 }
