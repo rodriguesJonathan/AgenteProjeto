@@ -12,17 +12,17 @@ if (isset($_POST)):
     $endereco     = (isset($_POST['endereco']))? $_POST['endereco']: '';
 
     // Valida se foram preenchidos todos os campos
-    if (empty($nome) || empty($email) || empty($senha) || empty($sus)) || empty($cep)) || empty($numero)) || empty($endereco)):
-        $array  = array('tipo' => 'alert alert-danger', 'mensagem' => 'Preencher todos os campos obrigatórios(*)!');
+    if (empty($nome) || empty($email) || empty($senha) || empty($sus) || empty($cep) || empty($numero) || empty($endereco)):
+        $array  = array('tipo' => 'alert alert-danger', 'mensagem' => 'Preencher todos os campos obrigatï¿½rios(*)!');
         echo json_encode($array);
     else:
 
-        // Grava no banco de dados as informações do contato
+        // Grava no banco de dados as informaï¿½ï¿½es do contato
         $opcoes = array(\PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8');
 
-        $pdo = new PDO('mysql:host=localhost;dbname=db_blog', 'root', '', $opcoes);
+        $pdo = new PDO('mysql:host=localhost;dbname=id11181286_bancoagente', 'id11181286_ramon', 'senha', $opcoes);
 
-        $sql = "INSERT INTO contato (nome, email, assunto, mensagem)VALUES(?, ?, ?, ?)";
+        $sql = "INSERT INTO usuario (nome, email, senha, sus, cep, numero , endereco)VALUES(?, ?, ?, ?,?,?,?)";
         $stm = $pdo->prepare($sql);
         $stm->bindValue(1, $nome);
         $stm->bindValue(2, $email);
