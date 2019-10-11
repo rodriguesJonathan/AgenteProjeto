@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--
 
 Todas as telas devem estar aqui.
@@ -30,15 +30,12 @@ Cada section é uma tela a ser exibida.
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </head>
 <body>
 	<!---------------------------------------------------------------------------------------------------------------------------------------------
@@ -177,156 +174,137 @@ Cada section é uma tela a ser exibida.
 	----------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-	<section id="pageNotificacoes" class="content">
-		<div id="mySidepanel" class="sidepanel">
+	<section id="pageNotificacoes" class="content bodyNOTIFICACAO">
+		
+		<div id="mySidepanel" class="sidepanelNOTIFICACAO">
 			<a href="javascript:void(0)" style="color:#0AB6DB;" class="closebtn" onclick="fecharNavNotificacao()">&times;</a>		
 		</div>
-		<div class=" header" style="height: 10%; background-color:#0AB6DB;" >
-			<button class="openbtn btn-lg  " onclick="abrirNavNotificacao()" style=" background-color:#0AB6DB; font-size: 30px"><i class=" icon-padding-1 fa fa-bars  "></i>Notificações</button>
+		<div class="headerNOTIFICACAO" style="height: 10%; background-color:#0AB6DB;" >
+			<button class="openbtnNOTIFICACAO btn-lg  " onclick="abrirNavNotificacao()" style=" background-color:#0AB6DB; font-size: 30px"><i class="icon-padding-1NOTIFICACAO fa fa-bars"></i>Notificações</button>
 		</div>
 		<br>
 		<div class="container " style="margin-top: -10%">
-			<a style=" background-color:#48D1CC;"  href="nova-notificacao.html" class="btn-position btn-lg btn-primary btn-block btn-style text-center " ><i class=" fas fa-plus"></i>&nbsp; Nova notificação</a>
+			<a style=" background-color:#48D1CC;"  href="nova-notificacao.html" class="btn-positionNOTIFICACAO btn-lg btn-primary btn-block btn-styleNOTIFICACAO text-center " ><i class=" fas fa-plus"></i>&nbsp; Nova notificação</a>
 		</div>
 		
+		<br>
 		
-			<br>
-		
-			<div class="container h6 text-center">
+		<div class="container h6 text-center">
 			<p>Vizualização de alertas da população<hr></p>
-			</div>
-		
-		
-		
-			<div class="details-card ">
-				<div class="">
-					<div class="row">
-						<div class="container">
-							<div class="card-content ">
-								<div class="card-img">
-								</div>
-								<div class="card-desc">
-									<h6  class=" text-right icon-color">Vizualizar dados do usuário<i class=" icon-color icon-padding-left fas fa-chevron-right  icon-padding"></i></h6>
-									<br>
-									<h3 style="color:rgb(216, 214, 214)"><i  class="icon-color fas fa-user fa-2x icon-padding-2"></i>Usuário</h3>
-									<form class="">
-										<div class="mb-3">
-											<textarea class="form-control " id="" placeholder="Mensagem" style="background-color:rgb(216, 214, 214); height: 120px " required></textarea>
-											
+		</div>
+				
+		<div class="details-card ">
+			<div class="">
+				<div class="row">
+					<div class="container">
+						<div class="card-contentNOTIFICACAO">
+							<div class="card-imgNOTIFICACAO">
+							</div>
+							<div class="card-descNOTIFICACAO">
+								<h6  class=" text-right icon-colorNOTIFICACAO">Vizualizar dados do usuário<i class=" icon-colorNOTIFICACAO icon-padding-leftNOTIFICACAO fas fa-chevron-right  icon-padding"></i></h6>
+								<br>
+								<h3 style="color:rgb(216, 214, 214)"><i  class="icon-colorNOTIFICACAO fas fa-user fa-2x icon-padding-2NOTIFICACAO"></i>Usuário</h3>
+								<form class="">
+									<div class="mb-3">
+										<textarea class="form-control " id="" placeholder="Mensagem" style="background-color:rgb(216, 214, 214); height: 120px " required></textarea>
+										
+									</div>
+								</form>
+								<div class="container text-center">
+									<button type="button" class=" btn btn-danger" >Não validar</button>
+									<button type="button" class=" btn botao" style="width: 120px" data-toggle="modal" data-target="#exampleModal">Validar</button>
+									
+									
+									<!-- Modal -->
+									<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog-centered modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-body ">
+													<form>
+														<div class="form-group">
+															<label for=""></label>
+															<select class="form-control "  style="background-color:rgb(216, 214, 214);">
+															<option>Grupo</option>
+															<option>-</option>
+															<option>-</option>
+															<option>-</option>
+															</select>
+														</div>
+													</form>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary btn-block btn-styleNOTIFICACAO">Notificar</button>
+												</div>
+											</div>
 										</div>
-									</form>
-									<div class="container text-center">
-											<button type="button" class=" btn btn-danger" >Não validar</button>
-											<button type="button" class=" btn botao" style="width: 120px" data-toggle="modal" data-target="#exampleModal">Validar</button>
-											</button>
-											
-											<!-- Modal -->
-											<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-												<div class="modal-dialog-centered modal-dialog" role="document">
-												<div class="modal-content">
-													
-													<div class="modal-body ">
-													
-														<form>
-				
-															<div class="form-group">
-																<label for=""></label>
-																<select class="form-control "  style="background-color:rgb(216, 214, 214);">
-																<option>Grupo</option>
-																<option>-</option>
-																<option>-</option>
-																<option>-</option>
-																</div>
-																</select>
-																</form>
-																</div>
-																
-			
-			
-			
-													</div>
-													<div class="modal-footer">
-													
-													<button type="button" class="btn btn-primary btn-block btn-style">Notificar</button>
-													</div>
-												</div>
-												</div>
-											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+
+
+
+
+		<div class="details-card ">
+			<div class="">
+				<div class="row">
+					<div class="container">
+						<div class="card-contentNOTIFICACAO">
+							<div class="card-imgNOTIFICACAO">
+							</div>
+							<div class="card-descNOTIFICACAO">
+								<h6 class=" text-right icon-colorNOTIFICACAO">Vizualizar dados do usuário<i class=" icon-colorNOTIFICACAO icon-padding-leftNOTIFICACAO fas fa-chevron-right  fa-sm icon-padding"></i></h6>
+								<br>
+								<h3 style="color:rgb(216, 214, 214)"><i class="icon-colorNOTIFICACAO fas fa-user fa-2x icon-padding-2NOTIFICACAO"></i>Usuário</h3>
+								<form class="">
+									<div class="mb-3">
+										<textarea class="form-control " id="" placeholder="Mensagem" style="background-color:rgb(216, 214, 214); height: 100px " required></textarea>
+										
+									</div>
+								</form>
+								<div class="container text-center">
+									
 								
-									</div>
+									<button type="button" class="btn btn-danger " >Não validar</button>
+									<button type="button" class=" btn botao" style="width: 120px" data-toggle="modal" data-target="#exampleModal">Validar</button>
+										
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<br>
-
-
-
-
-				<div class="details-card ">
-					<div class="">
-						<div class="row">
-							<div class="container">
-								<div class="card-content ">
-									<div class="card-img">
-									</div>
-									<div class="card-desc">
-										<h6 class=" text-right icon-color">Vizualizar dados do usuário<i class=" icon-color icon-padding-left fas fa-chevron-right  fa-sm icon-padding"></i></h6>
-										<br>
-										<h3 style="color:rgb(216, 214, 214)"><i class="icon-color fas fa-user fa-2x icon-padding-2"></i>Usuário</h3>
-										<form class="">
-											<div class="mb-3">
-												<textarea class="form-control " id="" placeholder="Mensagem" style="background-color:rgb(216, 214, 214); height: 100px " required></textarea>
-												
-											</div>
-										</form>
-										<div class="container text-center">
-											
-											
-												<button type="button" class="btn btn-danger " >Não validar</button>
-												<button type="button" class="btn botao" style="width: 120px" data-toggle="modal" data-target="#exampleModal">Validar</button>
-												</button>
-												
-												<!-- Modal -->
-												<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-													<div class="modal-dialog-centered modal-dialog" role="document">
-													<div class="modal-content">
-														
-														<div class="modal-body ">
-														
-															<form>
-					
-																<div class="form-group">
-																	<label for=""></label>
-																	<select class="form-control "  style="background-color:rgb(216, 214, 214);">
-																	<option>Grupo</option>
-																	<option>dale</option>
-																	<option>dele</option>
-																	<option>doli</option>
-																	</div>
-																	</select>
-																	</form>
-																	</div>
-																	
-				
-				
-				
-													</div>
-													<div class="modal-footer">					
-														<button type="button" class="btn btn-primary btn-block btn-style">Notificar</button>
-													</div>
+										<!-- Modal -->
+									<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog-centered modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-body ">
+													<form>
+														<div class="form-group">
+															<label for=""></label>
+															<select class="form-control "  style="background-color:rgb(216, 214, 214);">
+																<option>Grupo</option>
+																<option>dale</option>
+																<option>dele</option>
+																<option>doli</option>
+															</select>
+														</div>
+													</form>
+												</div>
+												<div class="modal-footer">					
+													<button type="button" class="btn btn-primary btn-block btn-styleNOTIFICACAO">Notificar</button>
 												</div>
 											</div>
-										</div>			
-									</div>
+										</div>
+									</div>			
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-					
-						<br>
+			</div>
+		</div>
+		<br>
 		
 	</section>
 
