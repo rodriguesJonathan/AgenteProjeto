@@ -1,293 +1,293 @@
 /*---------------------------------------------------------------------------------------------------------------------------------------------
-                                                    JÁ VEIO COM ARQUIVO SINGLEPAGE
+													JÁ VEIO COM ARQUIVO SINGLEPAGE
 
 Sumario:
 * INDEX
 * 
 ---------------------------------------------------------------------------------------------------------------------------------------------*/
 header{
-    width:20%;
-    background:#fff;
-    position: absolute;
-    left:0;
-    top:5%;
-    z-index: 5;
+	width:20%;
+	background:#fff;
+	position: absolute;
+	left:0;
+	top:5%;
+	z-index: 5;
 }
 header h1{
-    text-align: center;
+	text-align: center;
 }
 nav ul{
-    list-style:none;
-    margin:5px 0;
-    padding:0;
+	list-style:none;
+	margin:5px 0;
+	padding:0;
 }
 nav a{
-    display:block;
-    border:1px solid #e5e5e5;
-    border-left:0;
-    border-right:0;
-    margin:3px 0;
-    color:#333;
-    padding:5px 0;
-    text-decoration: none;
+	display:block;
+	border:1px solid #e5e5e5;
+	border-left:0;
+	border-right:0;
+	margin:3px 0;
+	color:#333;
+	padding:5px 0;
+	text-decoration: none;
 } 
 .box{
-    position:absolute;
-    top:5%;
-    right:10px;
-    width:100%;
-    height:100%;
-    background:#fff;
+	position:absolute;
+	top:5%;
+	right:10px;
+	width:100%;
+	height:100%;
+	background:#fff;
 }
 .box h2{
-    font-size:20px;
-    padding:10px;
+	font-size:20px;
+	padding:10px;
 }
 .box p{
-    font-size:12px;
-    padding:10px;
+	font-size:12px;
+	padding:10px;
 }
 .content{
-    min-width: 100%;
-    height: 98%;
-    position: absolute;
-    margin-left:-101%;
-    -webkit-transition: margin-left .8s ease-in-out;
-    -moz-transition: margin-left .8s ease-in-out;
-    -o-transition: margin-left .8s ease-in-out;
-    transition: margin-left .8s ease-in-out;
+	min-width: 100%;
+	height: 98%;
+	position: absolute;
+	margin-left:-101%;
+	-webkit-transition: margin-left .8s ease-in-out;
+	-moz-transition: margin-left .8s ease-in-out;
+	-o-transition: margin-left .8s ease-in-out;
+	transition: margin-left .8s ease-in-out;
 }
 .content:target{
-    margin-left:0;
+	margin-left:0;
 }
 #home{
-    margin-left:0;
+	margin-left:0;
 }
 
 #home:target ~ header #link-home a,
 #company:target ~ header #link-company a,
 #service:target ~ header #link-service a,
 #contact:target ~ header #link-contact a{
-    background: #333;
-    color: #fff;
+	background: #333;
+	color: #fff;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------
-                                                                INDEX
+																INDEX
 ---------------------------------------------------------------------------------------------------------------------------------------------*/
 body,
 html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background: #037e8e !important;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: #037e8e !important;
 }
 
 .form_containerINDEX {
-    margin-top: 380px;
+	margin-top: 380px;
 }
 .login_btnINDEX {
-    width: 100%;
-    background: #2CD7D1 !important;
-    color: white !important;
-    margin-top: -50px;
-    
+	width: 100%;
+	background: #2CD7D1 !important;
+	color: white !important;
+	margin-top: -50px;
+	
 }
 .login_btnINDEX:focus {
-    box-shadow: none !important;
-    outline: 0px !important;
+	box-shadow: none !important;
+	outline: 0px !important;
 }
 .login_containerINDEX {
-    padding: 0 2rem;
+	padding: 0 2rem;
 }
 .input-group-textINDEX {
-    background: #2CD7D1 !important;
-    color: white !important;
-    border: 0 !important;
-    border-radius: 0.25rem 0 0 0.25rem !important;
+	background: #2CD7D1 !important;
+	color: white !important;
+	border: 0 !important;
+	border-radius: 0.25rem 0 0 0.25rem !important;
 }
 .input_userINDEX,
 .input_passINDEX:focus {
-    box-shadow: none !important;
-    outline: 0px !important;
+	box-shadow: none !important;
+	outline: 0px !important;
 }
 
 .bg-imgINDEX {
-    background-image: url("../Imagens/bg.png"); /* The image used */
-    background-color: #037e8e; /* Used if the image is unavailable */
-    height: 100%; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+	background-image: url("../Imagens/bg.png"); /* The image used */
+	background-color: #037e8e; /* Used if the image is unavailable */
+	height: 100%; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 
 
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------
-                                                                ESQUECI
+																ESQUECI
 ---------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .form_containerESQUECI {
-    margin-top: 380px;
+	margin-top: 380px;
 }
 .login_btnESQUECI {
-    width: 100%;
-    background: #2CD7D1 !important;
-    color: white !important;
-    margin-top: -50px;
-    
+	width: 100%;
+	background: #2CD7D1 !important;
+	color: white !important;
+	margin-top: -50px;
+	
 }
 .login_btnESQUECI:focus {
-    box-shadow: none !important;
-    outline: 0px !important;
+	box-shadow: none !important;
+	outline: 0px !important;
 }
 .login_containerESQUECI {
-    padding: 0 2rem;
+	padding: 0 2rem;
 }
 .input-group-textESQUECI {
-    background: #2CD7D1 !important;
-    color: white !important;
-    border: 0 !important;
-    border-radius: 0.25rem 0 0 0.25rem !important;
+	background: #2CD7D1 !important;
+	color: white !important;
+	border: 0 !important;
+	border-radius: 0.25rem 0 0 0.25rem !important;
 }
 .input_userESQUECI,
 .input_passESQUECI:focus {
-    box-shadow: none !important;
-    outline: 0px !important;
+	box-shadow: none !important;
+	outline: 0px !important;
 }
 
 .bg-imgESQUECI {
-    background-image: url("../Imagens/bg.png"); /* The image used */
-    background-color: #037e8e; /* Used if the image is unavailable */
-    height: 100%; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+	background-image: url("../Imagens/bg.png"); /* The image used */
+	background-color: #037e8e; /* Used if the image is unavailable */
+	height: 100%; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 
 
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------
-                                                                MENU
+																MENU
 ---------------------------------------------------------------------------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
 
 .background-imageMENU {
-    background-image: url("../Imagens/fundoMenu.png");
-    
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
+	background-image: url("../Imagens/fundoMenu.png");
+	
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	}
 
 .icon-MENU{
-    color: #0A98AB;
+	color: #0A98AB;
  }
 
 .bg-nav-colorMENU{
-    background-color: #0A98AB;
-    color:white;
+	background-color: #0A98AB;
+	color:white;
 }
 
 .txt-colorMENU{
-    color: white;
-   
+	color: white;
+	 
 }
 
 .link-colorMENU{
-    color: #74F1F4;
-   
+	color: #74F1F4;
+	 
 }
 
 .nav-bar-colorMENU
 {
-    background-color: #0A98AB;
+	background-color: #0A98AB;
 }
 
 .topoMENU{
-    width: 43%;
-    padding-left: 92%;
-    padding-top: 6%;
-    
+	width: 43%;
+	padding-left: 92%;
+	padding-top: 6%;
+	
 }
 .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
  }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------
-                                                                NOTIFICAÇÃO
+																NOTIFICAÇÃO
 ---------------------------------------------------------------------------------------------------------------------------------------------*/
 .botao{
-    background-color: #48D1CC;
-    color: white;
+	background-color: #48D1CC;
+	color: white;
 }
 
 .bodyNOTIFICACAO {
-    background-color: rgb(216, 215, 215);
-    font-family: 'Varela Round', sans-serif;
+	background-color: rgb(216, 215, 215);
+	font-family: 'Varela Round', sans-serif;
 }
 
 .headerNOTIFICACAO{
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%;
-    box-shadow: none;
-    background-color:  #0AB6DB;
-    position: fixed;
-    height: 60px!important;
-    overflow: hidden;
-    z-index: 0;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 100%;
+	box-shadow: none;
+	background-color: #0AB6DB;
+	position: fixed;
+	height: 60px!important;
+	overflow: hidden;
+	z-index: 0;
 }
 
 
 .icon-padding-1NOTIFICACAO{
-    padding-right: 10px;
-    
-  }
+	padding-right: 10px;
+	
+	}
 
 .icon-padding-2NOTIFICACAO{
-  padding-right: 10px;
-  padding-left: 20px;
+	padding-right: 10px;
+	padding-left: 20px;
 }
 
 .icon-colorNOTIFICACAO{
-    color:rgb(216, 214, 214);
+	color:rgb(216, 214, 214);
 }
 
 .icon-padding-leftNOTIFICACAO{
-    padding-left: 10px;
+	padding-left: 10px;
 }
 
 .btn-positionNOTIFICACAO{
-    margin-top: 90px;
-    
-    
+	margin-top: 90px;
+	
+	
 }
 .btn-styleNOVANOTNOTIFICACAO{
-    background: #48D1CC;
-    border: #48D1CC;
-    height:45px;
-   
+	background: #48D1CC;
+	border: #48D1CC;
+	height:45px;
+	 
 }
 .btn-styleNOVANOTNOTIFICACAO:hover{
-    background-color:rgb(14, 161, 156);    
+	background-color:rgb(14, 161, 156);	
 }
 
 .card-contentNOTIFICACAO {
@@ -311,24 +311,24 @@ html {
 
 .card-imgNOTIFICACAO span {
 	position: absolute;
-    top: 15%;
-    left: 12%;
-    background: #1ABC9C;
-    padding: 6px;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    transform: translate(-50%,-50%);
+	top: 15%;
+	left: 12%;
+	background: #1ABC9C;
+	padding: 6px;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	transform: translate(-50%,-50%);
 }
 .card-imgNOTIFICACAO span h4{
-        font-size: 12px;
-        margin:0;
-        padding:10px 5px;
-         line-height: 0;
+		font-size: 12px;
+		margin:0;
+		padding:10px 5px;
+		 line-height: 0;
 }
 .card-descNOTIFICACAO {
 	padding: 2rem;
@@ -336,17 +336,17 @@ html {
 
 .card-descNOTIFICACAO h3 {
 	color: black;
-    font-weight: 500;
-    font-size: 1.3em;
-    line-height: 1.3em;
-    margin-top: 0;
-    margin-bottom: 0px;
-    padding: 0;
+	font-weight: 500;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	margin-top: 0;
+	margin-bottom: 0px;
+	padding: 0;
 }
 
 .card-descNOTIFICACAO p {
 	color: #747373;
-    font-size: 14px;
+	font-size: 14px;
 	font-weight: 400;
 	font-size: 1em;
 	line-height: 1.5;
@@ -358,143 +358,305 @@ html {
 
 
 .sidepanelNOTIFICACAO {
-  height: 2000px;
-  width: 0; 
-  position: fixed; 
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color:black; 
-  overflow-x: hidden;
-  padding-top: 60px; 
-  transition: 0.5s;
+	height: 2000px;
+	width: 0; 
+	position: fixed; 
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color:black; 
+	overflow-x: hidden;
+	padding-top: 60px; 
+	transition: 0.5s;
 }
 
 .sidepanelNOTIFICACAO a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	display: block;
+	transition: 0.3s;
 }
 
 .sidepanelNOTIFICACAO a:hover {
-  color: #f1f1f1;
+	color: #f1f1f1;
 }
 
 .sidepanelNOTIFICACAO .closebtnNOTIFICACAO {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 50px;
-  margin-left: 50px;
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 50px;
+	margin-left: 50px;
 }
 
 .openbtnNOTIFICACAO {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #111;
+	color: white;
+	padding: 10px 15px;
+	border: none;
 }
 
 .openbtnNOTIFICACAO: hover {
-  background-color: white;
+	background-color: white;
 }
 
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------
-                                                                NOVA NOTIFICAÇÃO
+																NOVA NOTIFICAÇÃO
 ---------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 .bodyNOVANOT {
-    background-color: rgb(216, 215, 215);
-    background: white;
-    font-family: 'Varela Round', sans-serif;
+	background-color: rgb(216, 215, 215);
+	background: white;
+	font-family: 'Varela Round', sans-serif;
 }
 
 .headerNOVANOT {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%;
-    box-shadow: none;
-    background-color:  #0AB6DB;
-    position: fixed;
-    height: 60px!important;
-    overflow: hidden;
-    z-index: 0;
-    
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 100%;
+	box-shadow: none;
+	background-color:	#0AB6DB;
+	position: fixed;
+	height: 60px!important;
+	overflow: hidden;
+	z-index: 0;
+	
 }
 
 .icon-padding-1NOVANOT{
-    padding-right: 10px;
-    
+	padding-right: 10px;
+	
 }
 
 .btn-positionNOVANOT{
-    margin-top: 90px;
-    
-    
+	margin-top: 90px;
+	
+	
 }
 .btn-styleNOVANOT{
-    background: #48D1CC;
-    border: #48D1CC;
-    height:45px;
-    color:white;
-   
+	background: #48D1CC;
+	border: #48D1CC;
+	height:45px;
+	color:white;
+	 
 }
 .btn-styleNOVANOT:hover{
-    background-color:rgb(14, 161, 156);    
+	background-color:rgb(14, 161, 156);	
 }
 
 
 .sidepanelNOVANOT {
-  height: 2000px;
-  width: 0; 
-  position: fixed; 
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color:black; 
-  overflow-x: hidden;
-  padding-top: 60px; 
-  transition: 0.5s;
+	height: 2000px;
+	width: 0; 
+	position: fixed; 
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color:black; 
+	overflow-x: hidden;
+	padding-top: 60px; 
+	transition: 0.5s;
 }
 
 .sidepanelNOVANOT a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	display: block;
+	transition: 0.3s;
 }
 
 .sidepanelNOVANOT a:hover {
-  color: #f1f1f1;
+	color: #f1f1f1;
 }
 
 .sidepanelNOVANOT .closebtnNOVANOT {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 50px;
-  margin-left: 50px;
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 50px;
+	margin-left: 50px;
 }
 
 .openbtnNOVANOT {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #111;
+	color: white;
+	padding: 10px 15px;
+	border: none;
 }
 
 .openbtnNOVANOT: hover {
-  background-color: white;
+	background-color: white;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------
+																	CADASTRO MORADIA
+	-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+html, body {
+	overflow-x: hidden;
+	height: 100%;
+}
+body {
+	background: #ffffff;
+	padding: 0;
+	margin: 0;
+	font-family: 'Varela Round', sans-serif;
+}*/
+.headerCAD1 {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 100%;
+	box-shadow: none;
+	background-color: #0AB6DB;
+	position: fixed;
+	height: 60px!important;
+	overflow: hidden;
+	z-index: 3;
+}
+
+.icon-padding-1CAD1{
+	padding-right: 10px;
+	
+}
+
+
+
+/* The sidepanel menu */
+.sidepanelCAD1 {
+	height: 2000px; /* Specify a height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 10; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #0AB6DB; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanelCAD1 a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanelCAD1 a:hover {
+	color: #f1f1f1;
+	z-index: 10;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanelCAD1 .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 50px;
+	margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtnCAD1 {
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #111;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+}
+
+.progressbar-wrapperCAD1 {
+	background: #fff;
+	width: 100%;
+	padding-top: 130px;
+	padding-bottom: 5px;
+	margin-top: -9%;
+	margin-left: 0;
+	width: 100vw; /* Valor da Largura */
+}
+.progressbarCAD1 li {
+	list-style-type: none;
+	width: 25%;
+	float: left;
+	font-size: 10px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	color: #999999;
+	margin: 0 auto;
+}
+.progressbarCAD1 li:before {
+	width: 20px;
+	height: 20px;
+	content: "";
+	line-height: 20px;
+	border: 2px solid #cccccc;
+	display: block;
+	text-align: center;
+	margin: 0 auto 	;
+	border-radius: 50%;
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+}
+.progressbarCAD1 li:after {
+	width: 100%;
+	height: 2px;
+	content: '';
+	position: absolute;
+	background-color: #cccccc;
+	top: 10px;
+	left: -50%;
+	z-index: 0;
+	margin: 0 auto;
+}
+.progressbarCAD1 li:first-child:after {
+	content: none;
+}
+.progressbarCAD1 li.active {
+	font-weight: bold;
+}
+.progressbarCAD1 li.active:before {
+	border-color: #00bcd4;
+	background: #00bcd4;
+}
+.progressbarCAD1 li.active + li:after {
+	background-color: #cccccc;
+}
+.progressbarCAD1 li.active:before {
+	background: #00bcd4	url(user.svg) no-repeat center center;
+	background-size: 60%;
+}
+.progressbarCAD1 li::before {
+	background: #cccccc url(user.svg) no-repeat center center;
+	background-size: 60%;
+}
+.formCAD1 {
+	font-size: 16px;
+	background: #ffffff;
+	max-width: 100vw;
+	margin: 80 auto;
+	padding: 0 10px 10px 10px;
+	padding-top: 50px;
+}
+.input-colorCAD1{
+	background-color: #dfdede;
 }

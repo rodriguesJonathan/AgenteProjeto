@@ -1,167 +1,157 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 html, body {
-    overflow-x: hidden;
-    height: 100%;
+	overflow-x: hidden;
+	height: 100%;
 }
 body {
-    background: #ffffff;
-    padding: 0;
-    margin: 0;
-    font-family: 'Varela Round', sans-serif;
+	background: #ffffff;
+	padding: 0;
+	margin: 0;
+	font-family: 'Varela Round', sans-serif;
 }
 .header {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%;
-    box-shadow: none;
-    background-color:  #0AB6DB;
-    position: fixed;
-    height: 60px!important;
-    overflow: hidden;
-    z-index: 3;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 100%;
+	box-shadow: none;
+	background-color: #0AB6DB;
+	position: fixed;
+	height: 60px!important;
+	overflow: hidden;
+	z-index: 3;
 }
 
 .icon-padding-1{
-    padding-right: 10px;
-    
-  }
+	padding-right: 10px;
+	
+}
 
 
 
 /* The sidepanel menu */
 .sidepanel {
-  height: 2000px; /* Specify a height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 10; /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #0AB6DB; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+	height: 2000px; /* Specify a height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 10; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #0AB6DB; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
 }
 
 /* The sidepanel links */
 .sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	display: block;
+	transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidepanel a:hover {
-  color: #f1f1f1;
-  z-index: 10;
+	color: #f1f1f1;
+	z-index: 10;
 }
 
 /* Position and style the close button (top right corner) */
 .sidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 50px;
-  margin-left: 50px;
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 50px;
+	margin-left: 50px;
 }
 
 /* Style the button that is used to open the sidepanel */
 .openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #111;
+	color: white;
+	padding: 10px 15px;
+	border: none;
 }
 
 .progressbar-wrapper {
-    background: #fff;
-    width: 100%;
-    padding-top: 130px;
-  
-    padding-bottom: 5px;
-    margin-top: -9%;
-    margin-left: 5%;
-    width: 80%; /* Valor da Largura */
-  
-  
-  }
-  
-  .progressbar li {
-    list-style-type: none;
-    width: 25%;
-    float: left;
-    font-size: 10px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    color: #999999;
-    margin: 0 auto;
-  }
-  
-  .progressbar li:before {
-    width: 20px;
-    height: 20px;
-    content: "";
-    line-height: 20px;
-    border: 2px solid #cccccc;
-    display: block;
-    text-align: center;
-    margin: 0 auto 3px auto;
-    border-radius: 50%;
-    position: relative;
-    z-index: 2;
-    background-color: #fff;
-  }
-  .progressbar li:after {
-     width: 100%;
-     height: 2px;
-     content: '';
-     position: absolute;
-     background-color: #cccccc;
-     top: 10px;
-     left: -50%;
-     z-index: 0;
-     margin: 0 auto;
-  }
-  .progressbar li:first-child:after {
-     content: none;
-  }
-  
-  .progressbar li.active {
-    font-weight: bold;  
-  }
-  .progressbar li.active:before {
-    border-color: #00bcd4;
-    background: #00bcd4;
-  }
-  .progressbar li.active + li:after {
-    background-color: #cccccc;
-  }
-  
-  .progressbar li.active:before {
-    background: #00bcd4  url(user.svg) no-repeat center center;
-    background-size: 60%;
-  }
-  .progressbar li::before {
-    background: #cccccc url(user.svg) no-repeat center center;
-    background-size: 60%;
-  }
-  
-  form {
-    font-size: 16px;
-    background: #ffffff;
-    max-width: 500px;
-    margin: 80 auto;
-    padding: 0 10px 10px 10px;
-    padding-top: 50px;
-  }
-  
-.input-color{
-  background-color: #dfdede;
+	background: #fff;
+	width: 100%;
+	padding-top: 130px;
+	padding-bottom: 5px;
+	margin-top: -9%;
+	margin-left: 5%;
+	width: 80%; /* Valor da Largura */
 }
-  
+.progressbar li {
+	list-style-type: none;
+	width: 25%;
+	float: left;
+	font-size: 10px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	color: #999999;
+	margin: 0 auto;
+}
+.progressbar li:before {
+	width: 20px;
+	height: 20px;
+	content: "";
+	line-height: 20px;
+	border: 2px solid #cccccc;
+	display: block;
+	text-align: center;
+	margin: 0 auto 3px auto;
+	border-radius: 50%;
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+}
+.progressbar li:after {
+	width: 100%;
+	height: 2px;
+	content: '';
+	position: absolute;
+	background-color: #cccccc;
+	top: 10px;
+	left: -50%;
+	z-index: 0;
+	margin: 0 auto;
+}
+.progressbar li:first-child:after {
+	content: none;
+}
+.progressbar li.active {
+	font-weight: bold;
+}
+.progressbar li.active:before {
+	border-color: #00bcd4;
+	background: #00bcd4;
+}
+.progressbar li.active + li:after {
+	background-color: #cccccc;
+}
+.progressbar li.active:before {
+	background: #00bcd4	url(user.svg) no-repeat center center;
+	background-size: 60%;
+}
+.progressbar li::before {
+	background: #cccccc url(user.svg) no-repeat center center;
+	background-size: 60%;
+}
+form {
+	font-size: 16px;
+	background: #ffffff;
+	max-width: 500px;
+	margin: 80 auto;
+	padding: 0 10px 10px 10px;
+	padding-top: 50px;
+}
+.input-color{
+	background-color: #dfdede;
+}

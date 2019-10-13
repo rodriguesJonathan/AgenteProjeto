@@ -87,29 +87,29 @@ Cada section é uma tela a ser exibida.
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
+		<script>
+				$(document).ready(function () {
 
-            $('#formulario').submit(function() {
-                var dados = $('#formulario').serialize();
-                
-                $.ajax({
-                    type : 'POST',
-                    url  : 'Banco/login.php',
-                    data : dados
+						$('#formulario').submit(function() {
+								var dados = $('#formulario').serialize();
+								
+								$.ajax({
+										type : 'POST',
+										url	: 'Banco/login.php',
+										data : dados
 					
-                })
-                .done(function(msg){
-				         alert("Sucesso"+msg);
-				     })
+								})
+								.done(function(msg){
+								 alert("Sucesso"+msg);
+						 })
 				.fail(function(jqXHR, textStatus, msg){
-				          alert("Erro: " +msg);
-                });
+									alert("Erro: " +msg);
+								});
 
-                return false;
-            });
-        });
-    </script>
+								return false;
+						});
+				});
+		</script>
 		
 	</section>
 
@@ -173,61 +173,61 @@ Cada section é uma tela a ser exibida.
 		<div class="container">
 				<br>
 				<div class='row'>
-				   <div class="col-sm-offset-2 col-md-8">
-					  <form class="form-horizontal" method="post" action="" id="formulario">
-						  <div id="msg" class=""></div>
-						 <div class="form-group">
+					 <div class="col-sm-offset-2 col-md-8">
+						<form class="form-horizontal" method="post" action="" id="formulario">
+							<div id="msg" class=""></div>
+						<div class="form-group">
 							<div class="col-sm-10">
 								<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo" required>
 							</div>
-						 </div>
-						 <div class="form-group">
+						</div>
+						<div class="form-group">
 							<div class="col-sm-10">
 								<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
 							</div>
-						 </div>
-						 <div class="form-group">
+						</div>
+						<div class="form-group">
 							<div class="col-sm-10">
 								<input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
 							</div>
-						 </div>
-						 <div class="form-group">
+						</div>
+						<div class="form-group">
 							<div class="col-sm-10">
 								<input type="password" class="form-control" id="repetirSenha" name="repetirSenha" placeholder="Repetir Senha" required>
 							</div>
-						 </div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10">
+								<input class="form-control" id='sus' name="sus"	placeholder="Nº SUS" required></input>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10">
+								<input class="form-control" id='cep' name="cep"	placeholder="CEP" required></input>
+							</div>
+						</div>
 						 <div class="form-group">
 							<div class="col-sm-10">
-								<input class="form-control" id='sus' name="sus"  placeholder="Nº SUS" required></input>
+								<input class="form-control" id='numero' name="numero"	placeholder="Número" required></input>
 							</div>
-						 </div>
-						 <div class="form-group">
+						</div>
+						<div class="form-group">
 							<div class="col-sm-10">
-								<input class="form-control" id='cep' name="cep"  placeholder="CEP" required></input>
+								<input class="form-control" id='endereco' name="endereco"	placeholder="Endereço" required></input>
 							</div>
-						 </div>
-						 <div class="form-group">
-							<div class="col-sm-10">
-								<input class="form-control" id='numero' name="numero"  placeholder="Número" required></input>
-							</div>
-						 </div>
-						 <div class="form-group">
-							<div class="col-sm-10">
-								<input class="form-control" id='endereco' name="endereco"  placeholder="Endereço" required></input>
-							</div>
-						 </div>
+						</div>
 		 
-						 <div class="form-group">
+						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
 								<input type="submit" class="btn btn-primary btn-block" name="enviar" value="Cadastrar">
 							</div>
-						 </div>
-					  </form>
-				   </div>
+						</div>
+						</form>
+					</div>
 				</div>
-			 </div>
-			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-			 <script>
+			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+			<script>
 				 $(document).ready(function () {
 		 
 					 $('#formulario').submit(function() {
@@ -235,20 +235,20 @@ Cada section é uma tela a ser exibida.
 						 
 						 $.ajax({
 							 type : 'POST',
-							 url  : '../Banco/mediadorPageCad_DB.php',
+							 url	: '../Banco/mediadorPageCad_DB.php',
 							 data : dados
 						 })
 						 .done(function(msg){
-								  alert("Sucesso"+msg);
-							  })
+									alert("Sucesso"+msg);
+								})
 						 .fail(function(jqXHR, textStatus, msg){
-								   alert("Erro: " +msg);
+									 alert("Erro: " +msg);
 						 });
 		 
 						 return false;
 					 });
 				 });
-			 </script>
+			</script>
 
 </section>
 
@@ -297,11 +297,11 @@ Cada section é uma tela a ser exibida.
 			<a href="javascript:void(0)" style="color:#0AB6DB;" class="closebtnNOTIFICACAO" onclick="fecharNavNotificacao()">&times;</a>		
 		</div>
 		<div class="headerNOTIFICACAO" style="height: 10%; background-color:#0AB6DB;" >
-			<button class="openbtnNOTIFICACAO btn-lg	" onclick="abrirNavNotificacao()" style=" background-color:#0AB6DB; font-size: 30px"><i class="icon-padding-1NOTIFICACAO fa fa-bars"></i>Notificações</button>
+			<button class="openbtnNOTIFICACAO btn-lg" onclick="abrirNavNotificacao()" style=" background-color:#0AB6DB; font-size: 30px"><i class="icon-padding-1NOTIFICACAO fa fa-bars"></i>Notificações</button>
 		</div>
 		<br>
-		<div class="container " style="margin-top: -10%">
-			<a style=" background-color:#48D1CC;"	href="nova-notificacao.html" class="btn-positionNOTIFICACAO btn-lg btn-primary btn-block btn-styleNOTIFICACAO text-center " ><i class=" fas fa-plus"></i>&nbsp; Nova notificação</a>
+		<div class="container " style="margin-top: 10%">
+			<a style=" background-color:#48D1CC;" href="nova-notificacao.html" class="btn-positionNOTIFICACAO btn-lg btn-primary btn-block btn-styleNOTIFICACAO text-center " ><i class=" fas fa-plus"></i>&nbsp; Nova notificação</a>
 		</div>
 		
 		<br>
@@ -340,7 +340,7 @@ Cada section é uma tela a ser exibida.
 													<form>
 														<div class="form-group">
 															<label for=""></label>
-															<select class="form-control "	style="background-color:rgb(216, 214, 214);">
+															<select class="form-control" style="background-color:rgb(216, 214, 214);">
 															<option>Grupo</option>
 															<option>-</option>
 															<option>-</option>
@@ -399,7 +399,7 @@ Cada section é uma tela a ser exibida.
 													<form>
 														<div class="form-group">
 															<label for=""></label>
-															<select class="form-control "	style="background-color:rgb(216, 214, 214);">
+															<select class="form-control" style="background-color:rgb(216, 214, 214);">
 																<option>Grupo</option>
 																<option>dale</option>
 																<option>dele</option>
@@ -408,12 +408,12 @@ Cada section é uma tela a ser exibida.
 														</div>
 													</form>
 												</div>
-												<div class="modal-footer">					
+												<div class="modal-footer">
 													<button type="button" class="btn btn-primary btn-block btn-styleNOTIFICACAO">Notificar</button>
 												</div>
 											</div>
 										</div>
-									</div>			
+									</div>
 								</div>
 							</div>
 						</div>
@@ -467,22 +467,92 @@ Cada section é uma tela a ser exibida.
 
 
 
+	<!---------------------------------------------------------------------------------------------------------------------------------------------
+																 CADASTRO MORADIA
+	----------------------------------------------------------------------------------------------------------------------------------------------->
+
+	<section id="pageCadastro1Moradia" class="content">
+		<div id="mySidepanel" class="sidepanelCAD1">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#">Navi</a>
+			<a href="#">Saci</a>
+			<a href="#">Nani</a> 
+			<a href="#">Chaci</a>
+			<a href="#">Nadi</a>
+		</div>
+		<div class="headerCAD1" style="height: 10%;" >
+			<button class="openbtnCAD1 btn-lg" onclick="openNav()" style="margin-top: 1%; background-color:#0AB6DB; font-size: 30px"><i class=" icon-padding-1CAD1 fa fa-bars	"></i>Cadastro Moradia</button>
+		</div>
+
+		<div class="progressbar-wrapperCAD1">
+			<ul class="progressbarCAD1">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+
+
+		<div class="container text-center progressbar-wrapperCAD1" style="padding-top: 4%">
+			<h4>Etapa 1 de 4</h4>
+		</div>
+
+
+			<form class="formCAD1"> 
+
+				<div class="row">
+
+					<div class="col">
+						<input type="text" class="form-control form-control-lg input-colorCAD1" placeholder="CEP">
+
+					</div>
+
+					<div class="col">
+						<input type="text" class="form-control mb-2 form-control-lg input-colorCAD1" placeholder="Número">
+					</div>
+				</div>
+
+				<div class="form-group mb-2">
+					<input type="password" class="form-control input-colorCAD1 form-control-lg" id="#" placeholder="Rua">
+				</div>
+
+				<div class="form-group mb-2 ">
+					<input type="password" class="form-control input-colorCAD1 form-control-lg" id="#" placeholder="Abastecimento de água">
+				</div>
+				
+				<div class="form-group mb-2">
+					<input type="password" class="form-control input-colorCAD1 form-control-lg" id="#" placeholder="Animais">
+				</div>
+
+				<div class="form-group mb-2">
+					<input type="password " class="form-control input-colorCAD1 form-control-lg" id="#" placeholder="Esgoto">
+				</div>
+
+				<div class="form-group mb-2">
+					<input type="password" class="form-control input-colorCAD1 form-control-lg" id="#" placeholder="Lixo">
+				</div>
+
+				<div class="form-group mb-2">
+					<input type="password" class="form-control input-colorCAD1 form-control-lg" id="#" placeholder="Nº SUS(responsável)">
+				</div>
+				<br>
+				<div >
+					<button type="submit" class="btn btn-primary btn-block	" style="font-size: 22px;background-color:#0AB6DB; height: 60px">Próximo</button>
+				</div>
+			</form>
+	</section>
 
 
 
 
 
 
-	<section id="contact" class="content">
-		<article class="box">
-			<h2>Contato</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque justo massa,
-				vestibulum id pulvinar quis, pharetra vestibulum quam. Sed ornare malesuada arcu id pulvinar.
-				Ut vulputate est sed nisl mattis lacinia. Aliquam mollis mauris id dictum tempus. Donec a
-				imperdiet purus, sed iaculis lectus. Nunc ligula enim, feugiat in vulputate vitae,
-				viverra sit amet nibh. Pellentesque sit amet nulla vel dolor dapibus cursus.
-			</p>
-		</article>
+
+
+
+	<section id="" class="content">
+		
 	</section>
 	
 
