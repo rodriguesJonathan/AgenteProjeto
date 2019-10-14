@@ -432,13 +432,13 @@ Cada section é uma tela a ser exibida.
 
 	<section id="pageNovaNotificacao" class="content bodyNOVANOT">
 		<div id="mySidepanel" class="sidepanelNOVANOT">
-			<a href="javascript:void(0)" class="closebtnNOVANOT" onclick="closeNav()">&times;</a>
+			<a href="javascript:void(0)" class="closebtnNOVANOT" onclick="fecharNavNotificacao()">&times;</a>
 			<a href="#">Abstrato</a>
 			<a href="#">Abstrato 2</a>
 		</div>
 		
 		<div class=" headerNOVANOT" style="height: 10%;" >
-			<button class="openbtnNOVANOT btn-lg" onclick="openNav()" style="margin-top: 1%; background-color:#0AB6DB; font-size: 30px"><i class=" icon-padding-1NOVANOT fa fa-bars	"></i>Nova Notificações</button>
+			<button class="openbtnNOVANOT btn-lg" onclick="abrirNavNotificacao()" style="margin-top: 1%; background-color:#0AB6DB; font-size: 30px"><i class=" icon-padding-1NOVANOT fa fa-bars	"></i>Nova Notificações</button>
 		</div>
 		
 		<br>
@@ -473,7 +473,7 @@ Cada section é uma tela a ser exibida.
 
 	<section id="pageCadastro1Moradia" class="content" style="height: 10px;">
 		<div id="mySidepanel" class="sidepanelCAD1">
-			<a href="javascript:void(0)" class="closebtnCAD1" onclick="closeNav()">&times;</a>
+			<a href="javascript:void(0)" class="closebtnCAD1" onclick="fecharNavNotificacao()">&times;</a>
 			<a href="#">Navi</a>
 			<a href="#">Saci</a>
 			<a href="#">Nani</a> 
@@ -481,7 +481,7 @@ Cada section é uma tela a ser exibida.
 			<a href="#">Nadi</a>
 		</div>
 		<div class="headerCAD1" style="height: 10%;" >
-			<button class="openbtnCAD1 btn-lg" onclick="openNav()" style="margin-top: 1%; background-color:#0AB6DB; font-size: 30px"><i class=" icon-padding-1CAD1 fa fa-bars	"></i>Cadastro Moradia</button>
+			<button class="openbtnCAD1 btn-lg" onclick="abrirNavNotificacao()" style="margin-top: 1%; background-color:#0AB6DB; font-size: 30px"><i class=" icon-padding-1CAD1 fa fa-bars	"></i>Cadastro Moradia</button>
 		</div>
 
 		<div class="progressbar-wrapperCAD1">
@@ -555,7 +555,7 @@ Cada section é uma tela a ser exibida.
 	----------------------------------------------------------------------------------------------------------------------------------------------->
 	<section id="pageCadastro2Individual" class="content">
 		<div id="mySidepanel" class="sidepanelCA2">
-			<a href="javascript:void(0)" class="closebtnCA2" onclick="closeNav()">&times;</a>
+			<a href="javascript:void(0)" class="closebtnCA2" onclick="fecharNavNotificacao()">&times;</a>
 			<a href="#">Navi</a>
 			<a href="#">Saci</a>
 			<a href="#">Nani</a>
@@ -564,7 +564,7 @@ Cada section é uma tela a ser exibida.
 		</div>
 
 		<div class="headerCA2" style="height: 10%;" >
-			<button class="openbtnCA2 btn-lg" onclick="openNav()" style="margin-top: 1%; background-color:#0AB6DB; font-size: 30px"><i class=" icon-padding-1CA2 fa fa-bars"></i>Cadastro Individual</button>
+			<button class="openbtnCA2 btn-lg" onclick="abrirNavNotificacao()" style="margin-top: 1%; background-color:#0AB6DB; font-size: 30px"><i class=" icon-padding-1CA2 fa fa-bars"></i>Cadastro Individual</button>
 		</div>
 
 		<div class="progressbar-wrapperCA2">
@@ -577,7 +577,7 @@ Cada section é uma tela a ser exibida.
 		</div>
 
 
-		<div class="text-center" style="padding-top: 4%">
+		<div class="text-center progressbar-wrapperCA2" style="padding-top: 4%">
 			<h4>Etapa 2 de 4</h4>
 		</div>
 
@@ -608,16 +608,16 @@ Cada section é uma tela a ser exibida.
 				</div>
 				<br>
 
-				<label class="container containerCA2">Plano de Saúde
-					<input type="inputCA2 checkbox" >
+				<label class="containerCA2">Plano de Saúde
+					<input type="checkbox" class="inputCA2" >
 					<span class="checkmarkCA2"></span>
 				</label>
-				<label class="container containerCA2">Mudança
-					<input type="inputCA2 checkbox">
+				<label class="containerCA2">Mudança
+					<input type="checkbox" class="inputCA2">
 					<span class="checkmarkCA2"></span>
 				</label>
-				<label class="container containerCA2">óbito
-					<input type="inputCA2 checkbox">
+				<label class="containerCA2">óbito
+					<input type="checkbox" class="inputCA2">
 					<span class="checkmarkCA2"></span>
 				</label>
 				<br>

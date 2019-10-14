@@ -690,6 +690,7 @@ body {
 	z-index: 3;
 }
 
+
 .icon-padding-1CA2{
 	padding-right: 10px;
 	
@@ -752,9 +753,9 @@ body {
 	padding-top: 130px;
 	padding-bottom: 5px;
 	margin: 0 auto;
-	width: 80%; /* Valor da Largura */
+	width: 100vw; /* Valor da Largura */
 	margin-top: -9%;
-	margin-left: 5%;
+	
 	
 	
 }
@@ -768,7 +769,7 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	color: #999999;
-	margin: 0 auto;
+	
 }
 	
 .progressbarCA2 .liCA2:before {
