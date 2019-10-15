@@ -95,7 +95,6 @@ nav a{
 	background: #2CD7D1 !important;
 	color: white !important;
 	margin-top: -50px;
-	
 }
 .login_btnINDEX:focus {
 	box-shadow: none !important;
@@ -119,7 +118,7 @@ nav a{
 .bg-imgINDEX {
 	background-image: url("../Imagens/bg.png"); /* The image used */
 	background-color: #037e8e; /* Used if the image is unavailable */
-	height: 100%; /* You must set a specified height */
+	height: 100vw; /* You must set a specified height */
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
@@ -606,7 +605,7 @@ body {
 	margin-left: 0;
 	width: 100vw; /* Valor da Largura */
 }
-.progressbarCAD1 .liCA1 {
+.progressbarCAD1 .liCAD1 {
 	list-style-type: none;
 	width: 25%;
 	float: left;
@@ -617,7 +616,7 @@ body {
 	color: #999999;
 	margin: 0 auto;
 }
-.progressbarCAD1 .liCA1:before {
+.progressbarCAD1 .liCAD1:before {
 	width: 20px;
 	height: 20px;
 	content: "";
@@ -631,7 +630,7 @@ body {
 	z-index: 2;
 	background-color: #fff;
 }
-.progressbarCAD1 .liCA1:after {
+.progressbarCAD1 .liCAD1:after {
 	width: 100%;
 	height: 2px;
 	content: '';
@@ -642,24 +641,24 @@ body {
 	z-index: 0;
 	margin: 0 auto;
 }
-.progressbarCAD1 .liCA1:first-child:after {
+.progressbarCAD1 .liCAD1:first-child:after {
 	content: none;
 }
-.progressbarCAD1 .liCA1.active {
+.progressbarCAD1 .liCAD1.active {
 	font-weight: bold;
 }
-.progressbarCAD1 .liCA1.active:before {
+.progressbarCAD1 .liCAD1.active:before {
 	border-color: #00bcd4;
 	background: #00bcd4;
 }
-.progressbarCAD1 .liCA1.active + .liCA1:after {
+.progressbarCAD1 .liCAD1.active + .liCAD1:after {
 	background-color: #cccccc;
 }
-.progressbarCAD1 .liCA1.active:before {
+.progressbarCAD1 .liCAD1.active:before {
 	background: #00bcd4	url(user.svg) no-repeat center center;
 	background-size: 60%;
 }
-.progressbarCAD1 .liCA1::before {
+.progressbarCAD1 .liCAD1::before {
 	background: #cccccc url(user.svg) no-repeat center center;
 	background-size: 60%;
 }
@@ -674,6 +673,18 @@ body {
 .input-colorCAD1{
 	background-color: #dfdede;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 /*---------------------------------------------------------------------------------------------------------------------------------------------
 																	CADASTRO 2 INDIVIDUAL
 	-----------------------------------------------------------------------------------------------------------------------------------------*/
@@ -749,7 +760,6 @@ body {
 
 .progressbar-wrapperCA2 {
 	background: #fff;
-	width: 100%;
 	padding-top: 130px;
 	padding-bottom: 5px;
 	margin: 0 auto;
@@ -918,3 +928,287 @@ body {
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------
+																	CADASTRO 3 SAUDE
+	-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+.header3SA {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 100%;
+		box-shadow: none;
+		background-color: #0AB6DB;
+		position: fixed;
+		height: 60px!important;
+		overflow: hidden;
+		z-index: 3;
+}
+
+.icon-padding-13SA{
+		padding-right: 10px;
+		
+}
+
+
+
+/* The sidepanel menu */
+.sidepanel3SA {
+	height: 2000px; /* Specify a height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 10; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #0AB6DB; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel3SA a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel3SA a:hover {
+	color: #f1f1f1;
+	z-index: 10;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel3SA .closebtn3SA {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 50px;
+	margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn3SA {
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #111;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+}
+
+.progressbar-wrapper3SA {
+		background: #fff;
+		padding-top: 130px;
+		padding-bottom: 5px;
+		margin: 0 auto;
+		width: 100vw; /* Valor da Largura */
+		margin-top: -9%;
+		
+}
+
+.progressbar3SA li {
+		list-style-type: none;
+		width: 25%;
+		float: left;
+		font-size: 10px;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+		color: #999999;
+		margin: 0 auto;
+}
+
+.progressbar3SA li:before {
+		width: 20px;
+		height: 20px;
+		content: "";
+		line-height: 20px;
+		border: 2px solid #cccccc;
+		display: block;
+		text-align: center;
+		margin: 0 auto 3px auto;
+		border-radius: 50%;
+		position: relative;
+		z-index: 2;
+		background-color: #fff;
+}
+.progressbar3SA li:after {
+		 width: 100%;
+		 height: 2px;
+		 content: '';
+		 position: absolute;
+		 background-color: #cccccc;
+		 top: 10px;
+		 left: -50%;
+		 z-index: 0;
+		 margin: 0 auto;
+}
+.progressbar3SA .li3SA:first-child:after {
+		 content: none;
+}
+
+.progressbar3SA .li3SA.active {
+		font-weight: bold;
+}
+.progressbar3SA .li3SA.active:before {
+		border-color: #00bcd4;
+		background: #00bcd4;
+}
+.progressbar3SA .li3SA.active + .li3SA:after {
+		background-color: #00bcd4;
+}
+
+.progressbar3SA .li3SA.active:before {
+		background: #00bcd4 url(user.svg) no-repeat center center;
+		background-size: 60%;
+}
+.progressbar3SA .li3SA::before {
+		background: #cccccc url(user.svg) no-repeat center center;
+		background-size: 60%;
+}
+.progressbar3SA .li3SA.action {
+		font-weight: bold; 
+}
+.progressbar3SA .li3SA.action:before {
+		border-color: #00bcd4;
+		background: #00bcd4;
+}
+.progressbar3SA .li3SA.action + .li3SA:after {
+		background-color: #00bcd4;
+}
+
+.progressbar3SA .li3SA.action:before {
+		background: #00bcd4 url(user.svg) no-repeat center center;
+		background-size: 60%;
+}
+
+.progressbar3SA .li3SA.absolute {
+		font-weight: bold; 
+}
+.progressbar3SA .li3SA.absolute:before {
+		border-color: #00bcd4;
+		background: #00bcd4;
+}
+.progressbar3SA .li3SA.absolute + .li3SA:after {
+		background-color: #cccccc;
+}
+	
+.progressbar3SA .li3SA.absolute:before {
+		background: #00bcd4 url(user.svg) no-repeat center center;
+		background-size: 60%;
+}
+	
+.form3SA {
+		font-size: 16px;
+		background: #ffffff;
+		max-width: 500px;
+		margin: 80 auto;
+		padding: 0 10px 10px 10px;
+		padding-top: 50px;
+}
+	
+.input3SA {
+		width: 380px;
+		padding: 10px;
+		margin: 3 auto;
+		background-color: #e6e6e6;
+		
+}
+	
+.input3SA {
+		background-color: #00bcd4;
+		height: 40px;
+		width: 380px;
+		font-weight: bold;
+		color: #ffffff;
+		cursor: pointer;
+	
+}
+	
+.input3SA:hover {
+		background: #078;
+}
+
+/* The container */
+.container3SA {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container3SA .input3SA {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark3SA {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container3SA:hover .input3SA ~ .checkmark3SA {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container3SA .input3SA:checked ~ .checkmark3SA {
+	background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark3SA:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.container3SA .input3SA:checked ~ .checkmark3SA:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.container3SA .checkmark3SA:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+	
+.input-color{
+	background-color: #dfdede;
+}
+
