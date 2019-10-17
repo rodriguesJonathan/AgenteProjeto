@@ -1224,3 +1224,299 @@ body {
 	background-color: #dfdede;
 }
 
+/*---------------------------------------------------------------------------------------------------------------------------------------------
+																	CADASTRO 4 RUA
+	-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+.headerC4 {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 100%;
+	box-shadow: none;
+	background-color: #0AB6DB;
+	position: fixed;
+	height: 60px!important;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.icon-padding-1C4{
+	padding-right: 10px;
+}
+
+
+
+/* The sidepanel menu */
+.sidepanelC4 {
+	height: 2000px; /* Specify a height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #0AB6DB; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanelC4 a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanelC4 a:hover {
+	color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanelC4 .closebtnC4 {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 50px;
+	margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtnC4 {
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #111;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+}
+
+.progressbar-wrapperC4 {
+	background: #fff;
+	width: 100vw;
+	padding-top: 130px;
+	padding-bottom: 5px;
+	margin: 0 auto;
+	margin-top: -9%;
+	
+	
+}
+	
+.progressbarC4 .liC4{
+	list-style-type: none;
+	width: 25%;
+	float: left;
+	font-size: 10px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	color: #999999;
+	margin: 0 auto;
+}
+
+.progressbarC4 .liC4:before {
+	width: 20px;
+	height: 20px;
+	content: "";
+	line-height: 20px;
+	border: 2px solid #cccccc;
+	display: block;
+	text-align: center;
+	margin: 0 auto 3px auto;
+	border-radius: 50%;
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+}
+.progressbarC4 .liC4:after {
+	 width: 100%;
+	 height: 2px;
+	 content: '';
+	 position: absolute;
+	 background-color: #cccccc;
+	 top: 10px;
+	 left: -50%;
+	 z-index: 0;
+	 margin: 0 auto;
+}
+.progressbarC4 .liC4:first-child:after {
+	 content: none;
+}
+	
+.progressbarC4 .liC4.active {
+	font-weight: bold;	
+}
+.progressbarC4 .liC4.active:before {
+	border-color: #00bcd4;
+	background: #00bcd4;
+}
+.progressbarC4 .liC4.active + .liC4:after {
+	background-color: #00bcd4;
+}
+	
+.progressbarC4 .liC4.active:before {
+	background: #00bcd4 url(user.svg) no-repeat center center;
+	background-size: 60%;
+}
+.progressbarC4 .liC4::before {
+	background: #cccccc url(user.svg) no-repeat center center;
+	background-size: 60%;
+}
+.progressbarC4 .liC4.action {
+	font-weight: bold; 
+}
+.progressbarC4 .liC4.action:before {
+	border-color: #00bcd4;
+	background: #00bcd4;
+}
+.progressbarC4 .liC4.action + .liC4:after {
+	background-color: #00bcd4;
+}
+	
+.progressbarC4 .liC4.action:before {
+	background: #00bcd4 url(user.svg) no-repeat center center;
+	background-size: 60%;
+}
+
+.progressbarC4 .liC4.absolute {
+	font-weight: bold; 
+}
+.progressbarC4 .liC4.absolute:before {
+	border-color: #00bcd4;
+	background: #00bcd4;
+}
+.progressbarC4 .liC4.absolute + .liC4:after {
+	background-color: #00bcd4;
+}
+	
+.progressbarC4 .liC4.absolute:before {
+	background: #00bcd4 url(user.svg) no-repeat center center;
+	background-size: 60%;
+}
+
+.progressbarC4 .liC4.add {
+	font-weight: bold; 
+}
+.progressbarC4 .liC4.add:before {
+	border-color: #00bcd4;
+	background: #00bcd4;
+}
+.progressbarC4 .liC4.add + .liC4:after {
+	background-color: #cccccc;
+}
+	
+.progressbarC4 .liC4.add:before {
+	background: #00bcd4 url(user.svg) no-repeat center center;
+	background-size: 60%;
+}
+	
+.formC4 {
+	font-size: 16px;
+	background: #ffffff;
+	max-width: 500px;
+	margin: 80 auto;
+	padding: 0 10px 10px 10px;
+	padding-top: 50px;
+}
+	
+.inputC4 {
+	width: 380px;
+	padding: 10px;
+	margin: 3 auto;
+	background-color: #e6e6e6;
+	
+}
+	
+.enviar .inputC4 {
+	background-color: #00bcd4;
+	height: 40px;
+	width: 380px;
+	font-weight: bold;
+	color: #ffffff;
+	cursor: pointer;
+	
+}
+	
+.enviar .inputC4:hover {
+	background: #078;
+}
+	
+	
+/* The container */
+.containerC4 {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerC4 .inputC4 {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmarkC4 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containerC4:hover .inputC4 ~ .checkmarkC4 {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerC4 .inputC4:checked ~ .checkmarkC4 {
+	background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarkC4:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.containerC4 .inputC4:checked ~ .checkmarkC4:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerC4 .checkmarkC4:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.input-color{
+	background-color: #dfdede;
+}
+	
+
+	
