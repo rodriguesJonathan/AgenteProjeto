@@ -8,7 +8,7 @@ $cep     = $_POST['cep'];
 $numero     = $_POST['numero'];
 $endereco     = $_POST['endereco'];
 
-$sql = "INSERT INTO usuario(nome,email,senha,sus,cep,numero,endereco) VALUES ('$nome','$email','$senha','$sus','$cep','$numero','$endereco')";
+$sql = "INSERT INTO usuario (nome,email,senha,sus,cep,numero,endereco) VALUES ('$nome','$email','$senha','$sus','$cep','$numero','$endereco')";
 
 if (mysqli_query($conn,$sql)){
 
@@ -19,6 +19,7 @@ else{
 
     echo "Usuario não cadastrado";
 }
+
 
 
 

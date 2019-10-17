@@ -41,6 +41,7 @@ nav a{
 	padding:5px 0;
 	text-decoration: none;
 } 
+
 .box{
 	position:absolute;
 	top:5%;
@@ -179,6 +180,17 @@ nav a{
 	background: white;
 }
 
+.imagemCadastro{
+	width: 25vw;
+	height: 25vw;
+}
+
+.inputCadastro{
+	background-color: #d3d3d3;
+	
+
+
+}
 
 
 

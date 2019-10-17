@@ -18,7 +18,6 @@ Cada section é uma tela a ser exibida.
 
 	<link rel="stylesheet" type="text/css" href="css//normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -31,9 +30,7 @@ Cada section é uma tela a ser exibida.
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </head>
@@ -47,7 +44,7 @@ Cada section é uma tela a ser exibida.
 			<div class="d-flex justify-content-center h-100">
 				<div class="container " style="padding: top 50px;">
 					<div class="d-flex justify-content-center form_containerINDEX">
-						<form class="form-horizontal" method="post" action="BANCO/login.php" id="formulario">
+						<form class="form-horizontal" method="post" action="BANCO/login.php" id="form_login">
 							<div class="input-group mb-3">
 								<div class="input-group-append">
 									<span class="input-group-text input-group-textINDEX"><i class="fas fa-user"></i></span>
@@ -86,12 +83,11 @@ Cada section é uma tela a ser exibida.
 				</div>
 			</div>
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		<script>
 				$(document).ready(function () {
 
 						$('#formulario').submit(function() {
-								var dados = $('#formulario').serialize();
+								var dados = $('#form_login').serialize();
 								
 								$.ajax({
 										type : 'POST',
@@ -129,7 +125,7 @@ Cada section é uma tela a ser exibida.
 			<div class="d-flex justify-content-center h-100">
 				<div class="container " style="padding: top 50px;">
 					<div class="d-flex justify-content-center form_containerESQUECI">
-						<form>
+						<form id="form_esqueci_senha">
 							<div class="d-flex justify-content-center">
 								<h5 style="color:white">Recuperar senha</h5>
 							</div>
@@ -174,78 +170,81 @@ Cada section é uma tela a ser exibida.
 				<br>
 				<div class='row'>
 					 <div class="col-sm-offset-2 col-md-8">
-						<form class="form-horizontal" method="post" action="" id="formulario">
+						<img class="imagemCadastro rounded mx-auto d-block" src="Imagens/logo_cadastro.jfif">
+							<div class="container text-center progressbar-wrapperCAD1" style="padding-top: 4%">
+									<h4 >Cadastre-se</h4>
+								</div>
+						 
+
+						<form class="form-horizontal" id="form_cadastro">
 							<div id="msg" class=""></div>
 						<div class="form-group">
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo" required>
+								<input type="text" class="form-control input-color form-control-lg" id="nome" name="nome" style="background-color: #d3d3d3;"  placeholder="Nome completo" required>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+								<input type="text" class="form-control input-color form-control-lg" id="email" name="email" style="background-color: #d3d3d3;" placeholder="Email" required>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-10">
-								<input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
+								<input type="password" class="form-control input-color form-control-lg" id="senha" name="senha" style="background-color: #d3d3d3;" placeholder="Senha" required>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-10">
-								<input type="password" class="form-control" id="repetirSenha" name="repetirSenha" placeholder="Repetir Senha" required>
+								<input type="password" class="form-control input-color form-control-lg" id="repetirSenha" style="background-color: #d3d3d3;" name="repetirSenha" placeholder="Repetir Senha" required>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-10">
-								<input class="form-control" id='sus' name="sus"	placeholder="Nº SUS" required></input>
+								<input class="inputCadastro form-control input-color form-control-lg " id='sus' name="sus" style="background-color: #d3d3d3;"	placeholder="Nº SUS" required></input>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-10">
-								<input class="form-control" id='cep' name="cep"	placeholder="CEP" required></input>
+								<input class="inputCadastro form-control  form-control-lg " id='cep' name="cep" style="background-color: #d3d3d3;"	placeholder="CEP" required></input>
 							</div>
 						</div>
 						 <div class="form-group">
 							<div class="col-sm-10">
-								<input class="form-control" id='numero' name="numero"	placeholder="Número" required></input>
+								<input class="form-control input-color form-control-lg" id='numero' name="numero"	style="background-color: #d3d3d3;" placeholder="Número" required></input>
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-sm-10">
-								<input class="form-control" id='endereco' name="endereco"	placeholder="Endereço" required></input>
+							<div class="col-sm-10 ">
+								<input class="  form-control  form-control-lg" id='endereco' name="endereco" style="background-color: #d3d3d3;"	placeholder="Endereço" required></input>
 							</div>
 						</div>
-		 
-						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10">
-								<input type="submit" class="btn btn-primary btn-block" name="enviar" value="Cadastrar">
-							</div>
+						<br>
+						<br>
+						
+						
+								<div class=" container">
+										<button type="submit" name="button" class=" form-control form-control-lg" style="color:white; background-color: #2CD7D1 " >Cadastrar</button>
+								</div>
 						</div>
 						</form>
 					</div>
 				</div>
 			</div>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 			<script>
+
+
+    
+				
 				 $(document).ready(function () {
 		 
-					 $('#formulario').submit(function() {
-						 var dados = $('#formulario').serialize();
-						 
+					 $('#form_cadastro').submit(function() {
+						 var dados = $('#form_cadastro').serialize()
 						 $.ajax({
-							 type : 'POST',
-							 url	: '../Banco/mediadorPageCad_DB.php',
-							 data : dados
-						 })
-						 .done(function(msg){
-									alert("Sucesso"+msg);
-								})
-						 .fail(function(jqXHR, textStatus, msg){
-									 alert("Erro: " +msg);
-						 });
-		 
-						 return false;
+				          url : "Banco/mediadorPageCad_DB.php",
+				          type : 'post',
+				          data : dados
+							}); 
+						
 					 });
 				 });
 			</script>
@@ -259,7 +258,7 @@ Cada section é uma tela a ser exibida.
 	----------------------------------------------------------------------------------------------------------------------------------------------->
 	
 	<section id="pageMenu" class="content">
-		<div class="background-imageMENU" style="font-family: 'Varela Round', sans-serif; background-color:	#037E8E ">
+		<div class="background-imageMENU" style="font-family: 'Varela Round', sans-serif; background-color:	#37E8E ">
 			<div class="topoMENU" >
 			 	<a class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				 	<i class="icon-MENU fa fa-ellipsis-v fa-3x"></i>
@@ -274,7 +273,7 @@ Cada section é uma tela a ser exibida.
 			</div>
 			
 		<div id="nav" style="display: none">
-			<nav class="navbar	navbar-expand-sm nav-bar-colorMENU	fixed-bottom text-center justify-content-center" style="height: 100px; font-size: 13px; ">
+			<nav class="navbar	navbar-expand-sm nav-bar-colorMENU	fixed-bottom text-center justify-content-center" style="height: 1px; font-size: 13px; ">
 					
 				<a class="nav-item nav-link active txt-colorMENU" href="#" onclick="apaga_navMenu()"><i class="fas fa-map-marker	fa-3x"></i><p class="link-colorMENU">Mapa</p></a>
 			 	<a class="nav-item nav-link txt-colorMENU" href="#pageCadastro1Moradia" onclick="apaga_navMenu()"><i class="fas fa-home	fa-3x"></i><p class="link-colorMENU">Visitas</p></a>
