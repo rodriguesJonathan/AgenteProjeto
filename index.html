@@ -240,10 +240,22 @@ Cada section é uma tela a ser exibida.
 					 $('#form_cadastro').submit(function() {
 						 var dados = $('#form_cadastro').serialize()
 						 $.ajax({
-				          url : "Banco/mediadorPageCad_DB.php",
-				          type : 'post',
-				          data : dados
-							}); 
+				         	url : "Banco/mediadorPageCad_DB.php",
+				         	type : 'post',
+				         	data : dados
+						})
+						.done(function(msg){
+							if (msg=='1') {
+								window.location.href = "#login";
+
+							}else{
+								window.location.href = "#cadastro";
+							}
+						})
+						.fail(function(jqXHR, textStatus, msg){
+							alert(usuário);
+						});
+		
 						
 					 });
 				 });

@@ -10,16 +10,15 @@ $endereco     = $_POST['endereco'];
 
 $sql = "INSERT INTO usuario (nome,email,senha,sus,cep,numero,endereco) VALUES ('$nome','$email','$senha','$sus','$cep','$numero','$endereco')";
 
-if (mysqli_query($conn,$sql)){
 
-    echo "Usuario cadastrado!";
+$linhasInseridas = mysql_affected_rows($conn);
+if($linhasInseridas>0){
+	echo"1"; 
+      
+}else{ 
+	echo"0";
+        
 }
-
-else{
-
-    echo "Usuario não cadastrado";
-}
-
 
 
 
